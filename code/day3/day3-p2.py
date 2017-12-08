@@ -86,5 +86,8 @@ def find_bigger(x):
 
 
 if __name__ == "__main__":
+    import timeit
     big_val = find_bigger(325489)
+    num = 100
+    print(timeit.timeit(lambda: find_bigger(325489), number=num)/num)
     print(big_val)

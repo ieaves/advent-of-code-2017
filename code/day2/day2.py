@@ -1,6 +1,6 @@
 
 def line_reader(file):
-    total = 0
+
     with open(file, 'r') as f:
         for line in f:
             res = [int(item) for item in line.strip().split()]
